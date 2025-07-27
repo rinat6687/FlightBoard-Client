@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# FlightBoard-client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A flight management system, including a client side (React) and a server side (ASP.NET Core). The system allows flights to be displayed, added, deleted, filtered and updated in real time using SignalR.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Installation and running instructions
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ✅ Client side (Frontend - React)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Open the client folder:
 
-### `npm test`
+```
+cd FlightBoardApp/flight_board_client
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the packages:
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the application:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> The application will open at: `http://localhost:3000`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🧱 Architectural explanation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**:
+- Based on React 18.
+- Using **React Query** to manage state from the server.
+- Using **Redux Toolkit** to manage UI (such as filtering flights, models).
+- **Axios** for HTTP calls.
+- **SignalR** for live flight updates.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Communication**:
+- REST API between the frontend and backend.
+- SignalR for live broadcasts from the server to the client (such as adding a flight in real time).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 📦 Third-party packages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `react`
+- `@reduxjs/toolkit`
+- `react-redux`
+- `react-query`
+- `axios`
+- `@microsoft/signalr`
+- `antd` (or `@mui/material` if applicable)
+
+
+## ✨ Project creator
+
+**Rinat skinny**
+[rinat6687@gmail.com](mailto:rinat6687@gmail.com)
